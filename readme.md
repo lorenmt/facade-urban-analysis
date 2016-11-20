@@ -1,10 +1,10 @@
-% Building Facade-based City Classification from Aerial View Images
-% Author: Shikun Liu
-% Date: May 16, 2016
+# Building Facade-based City Classification from Aerial View Images##33saf
+# Author: Shikun Liu
+# Date: May 16, 2016
 
 =====================folders======================
 facades - pre-detected facades in each city-pic_id; mat file contains all the information on each detected facades using JC's alogrithm
-more details: J. Liu and Y. Liu, 'Local Regularity-driven City-scale Facade Detection from Aerial Images', Computer Vision and Pattern Recognition 
+more details: J. Liu and Y. Liu, 'Local Regularity-driven City-scale Facade Detection from Aerial Images', Computer Vision and Pattern Recognition #
 
 functions - all related matlab functions in main.m
 
