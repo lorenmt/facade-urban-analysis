@@ -1,0 +1,12 @@
+function score=evaPatchSym(patch,T)
+patch=double(rgb2gray(patch));
+[X Y Z]=size(patch);
+
+dx=round(X/6);dy=round(Y/6);
+
+patchH=patch(:,end:-1:1,:);
+patchV=patch(end:-1:1,:,:);
+
+sH=normxcorr2(patch,patchH);
+sV=normxcorr2(patch,patchV);
+score=(max(sH(X,Y-dy:Y+dy))+max(sV(X-dx:X+dx,Y)))/2;
