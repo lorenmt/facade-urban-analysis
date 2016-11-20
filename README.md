@@ -25,7 +25,8 @@
 
 7. ground truth facade city classification: city classification using hand-labeled ground truth facades
 
-ccccccccccc
-Note: To prettify the results: please install **Charter** fontnformation please see the attached paper and its supplement.
+Note: To prettify the results: please install **Charter** font.
+
+More formation please see the attached paper and its supplement.
 
 Enjoy. :D
