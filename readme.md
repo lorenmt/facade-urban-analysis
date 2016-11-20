@@ -1,35 +1,34 @@
-## Building Facade-based City Classification from Aerial View Images
+# Building Facade-based City Classification from Aerial View Images##33saf
+# Author: Shikun Liu
+# Date: May 16, 2016
 
-### Folders
-1. facades - pre-detected facades in each city-pic_id; mat file contains all the information on each detected facades using JC's alogrithm. More details see: [Local Regularity-driven City-scale Facade Detection from Aerial Images](https://pdfs.semanticscholar.org/f1e0/52914253ee5e7f60547bb4badcf819189024.pdf)
+=====================folders======================
+facades - pre-detected facades in each city-pic_id; mat file contains all the information on each detected facades using JC's alogrithm
+more details: J. Liu and Y. Liu, 'Local Regularity-driven City-scale Facade Detection from Aerial Images', Computer Vision and Pattern Recognition #
 
-2. functions - all related matlab functions in main.m
+functions - all related matlab functions in main.m
 
-3. poly - functions for ploting facades area
+poly - functions for ploting facades area
 
-4. drtoolbox - toolbox for dimension reduction evaluation
+drtoolbox - toolbox for dimension reduction evaluation
 
-5. lattice - finding lattices in detected facades. More details see: [Translation-Symmetry-based Perceptual Grouping with Applications to Urban Scenes ](http://vision.cse.psu.edu/publications/pdfs/2010park3.pdf)
+lattice - finding lattices in detected facades
+more detials: M. Park, K. Brocklehurst, R.T. Collins and Y. Liu, 'Translation-Symmetry-based Perceptual Grouping with Applications to Urban Scenes', Asian Conference on Computer Vision (ACCV) 2010
 
-### Main file (*required MATLAB Computer Vision ToolBox*)
-1. facades extraction: extract facades features by JC's algorithm
+=====================main.m=========================
+main.m  ***required Computer Vision ToolBox*****
+-facades extraction: extract facades features by JC's algorithm
+-facades input data rebuild: add other hand-crafted features: entropy, tile, etc...
+-find top 2000 true/nontrue facade: rank all facades by facade area; tsne plot for visualization; city-classification using JC's raw detected facade
+-feature visualization: 3-feature dimension visualization
+-binary classification: use SVM to classify true and nontrue facades; ROC curve for visualization
+-multiclass classification: city classification for true facades ranked by area
+-ground truth facade city classification: city classification using hand-labeled ground truth facades
+-3-city visualization: cityclassificaiton visualization
 
-2. facades input data rebuild: add other hand-crafted features: entropy, tile, etc...
+=======================================================
+To prettify the results: please install **Charter** font
+more information please see the attached paper and its supplement..
+Enjoy.
 
-3. find top 2000 true/nontrue facade: rank all facades by facade area; tsne plot for visualization; city-classification using JC's raw detected facade
-
-4. feature visualization: 3-feature dimension visualization
-
-5. binary classification: use SVM to classify true and nontrue facades; ROC curve for visualization
-
-6. multiclass classification: city classification for true facades ranked by area
-
-7. ground truth facade city classification: city classification using hand-labeled ground truth facades
-
-8. 3-city visualization: cityclassificaiton visualization
-
-Note: To prettify the results: please install **Charter** font.
-
-More technical details please see the attached paper and its supplement.
-
-Enjoy. :D
+-SK <sk.lorenmt@gmail.com>
